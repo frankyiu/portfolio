@@ -28,7 +28,7 @@ body {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.7)
     ),
-    url('../public/stalker-campfire.gif');
+    url('../public/img/stalker-campfire.gif');
 
   background-size: cover;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--primary);
+  /* background: var(--primary); */
   border-radius: 5px;
 }
 

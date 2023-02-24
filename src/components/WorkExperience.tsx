@@ -19,15 +19,15 @@ function WorkExperience({}: Props) {
             'Revamped internal legacy system by introducing micro-service architecture, scale up to handle 10 different platforms member data',
             'Engaged in designing the system architecture and user interface with senior developers',
           ]}
-          avatarSrc={'/experience/ringus.jpg'}
+          avatarSrc={process.env.PUBLIC_URL + '/img/experience/ringus.jpg'}
           skillsSrc={[
-            '/skills/spring-original.svg',
-            '/skills/react-original.svg',
-            '/skills/vuejs-original.svg',
-            '/skills/redis-original.svg',
-            '/skills/nodejs-original.svg',
-            '/skills/typescript-original.svg',
-            '/skills/java-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/spring-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/react-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/vuejs-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/redis-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/nodejs-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/typescript-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/java-original.svg',
           ]}
         />
         <ExperienceCard
@@ -40,10 +40,10 @@ function WorkExperience({}: Props) {
             'Conducted testing on the latest system build before deployment',
             'Prepared over 50 incidents log and documentation for system defects and system configuration',
           ]}
-          avatarSrc={'/experience/hkma.jpg'}
+          avatarSrc={process.env.PUBLIC_URL + '/img/experience/hkma.jpg'}
           skillsSrc={[
-            '/skills/python-original.svg',
-            '/skills/oracle-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/python-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/oracle-original.svg',
           ]}
         />
         <ExperienceCard
@@ -55,10 +55,10 @@ function WorkExperience({}: Props) {
             'Implemented an Online Booking system for 10K students and advisors to schedule appointments',
             'Assisted with Entrepreneurship Center to organize Hackathon UST 2019',
           ]}
-          avatarSrc={'/experience/ust.svg'}
+          avatarSrc={process.env.PUBLIC_URL + '/img/experience/ust.svg'}
           skillsSrc={[
-            '/skills/php-original.svg',
-            '/skills/javascript-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/php-original.svg',
+            process.env.PUBLIC_URL + '/img/skills/javascript-original.svg',
           ]}
         />
       </div>

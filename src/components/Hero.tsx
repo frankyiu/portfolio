@@ -18,7 +18,7 @@ export default function Hero({}: Props) {
       <div className="relative  text-center">
         <img
           className="w-28 h-28 rounded-full mx-auto mb-10"
-          src="/profile.jpg"
+          src={process.env.PUBLIC_URL + '/img/profile.jpg'}
         />
         <div className=" text-gray-500 text-sm uppercase pb-2 tracking-[15px]">
           software developer

@@ -13,7 +13,7 @@ function About({}: Props) {
           transition={{ duration: 1.2 }}
           whileInView={{ x: 0, opacity: 1 }}
           className="flex-shrink-0 w-52 h-52 rounded-full object-cover md:w-72 md:mb-0 md:h-auto  md:rounded-none"
-          src="/about.jpg"
+          src={process.env.PUBLIC_URL + '/img/about.jpg'}
         />
         <div className="w-[320px]  md:w-[500px] ">
           <div className="text-2xl font-semibold py-5">

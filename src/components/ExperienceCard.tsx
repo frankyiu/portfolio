@@ -40,7 +40,7 @@ function ExperienceCard({
         </div>
 
         <div className="text-sm">{period}</div>
-        <div className="overflow-y-scroll md:overflow-hidden">
+        <div className="overflow-y-scroll ">
           <ul className=" list-disc space-y-2 ml-5 ">
             {summaries.map((sum) => (
               <li>{sum}</li>

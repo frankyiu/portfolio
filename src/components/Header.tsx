@@ -35,7 +35,10 @@ function Header({}: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center"
       >
-        <img className="w-10 h-10 rounded-full mr-3" src="/profile.jpg" />
+        <img
+          className="w-10 h-10 rounded-full mr-3"
+          src={process.env.PUBLIC_URL + '/img/profile.jpg'}
+        />
         <p className="uppercase hidden md:inline-flex text-md text-gray-400">
           Frank Yiu
         </p>

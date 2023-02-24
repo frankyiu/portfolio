@@ -9,9 +9,9 @@ type Props = {
 function Skill({ avatar, percent }: Props) {
   return (
     <motion.div
-      initial={{ y: 200, opacity: 0 }}
+      initial={{ x: 100, opacity: 0 }}
       transition={{ duration: 1 }}
-      whileInView={{ y: 0, opacity: 1 }}
+      whileInView={{ x: 0, opacity: 1 }}
       className="relative group flex cursor-pointer border border-gray-500 rounded-full"
     >
       <motion.img
