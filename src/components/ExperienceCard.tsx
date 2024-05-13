@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 type Props = {
+  isActive: boolean;
   avatarSrc: string;
   skillsSrc: string[];
   post: string;
@@ -11,6 +12,7 @@ type Props = {
 };
 
 function ExperienceCard({
+  isActive,
   post,
   company,
   period,
@@ -18,8 +20,15 @@ function ExperienceCard({
   skillsSrc,
   summaries,
 }: Props) {
+  const baseArticleClass =
+    'text-left flex flex-col space-y-5 flex-shrink-0 items-center rounded-lg p-10 bg-gray-900 snap-center w-[320px] md:w-[600px]  hover:opacity-100 duration-200 overflow-hidden';
+
   return (
-    <article className="text-left flex flex-col space-y-5 flex-shrink-0 items-center rounded-lg p-10 bg-gray-900 snap-center w-[320px] md:w-[600px]  hover:opacity-100  opacity-60 duration-200 overflow-hidden">
+    <article
+      className={`${baseArticleClass} ${
+        isActive ? 'opacity-100' : 'opacity-60'
+      }`}
+    >
       {/* avatar */}
       <motion.img
         initial={{ x: -200, opacity: 0 }}

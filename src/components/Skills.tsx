@@ -4,6 +4,10 @@ import Skill from './Skill';
 type Props = {};
 
 function Skills({}: Props) {
+  const skillNameToSrc = (file: string) => {
+    return `${process.env.PUBLIC_URL}/img/skills/${file}`;
+  };
+
   return (
     <div className="section">
       <h3 className="subTitle">Skills</h3>
@@ -12,63 +16,19 @@ function Skills({}: Props) {
       </h4>
       <div className="flex flex-col justify-center items-center h-[70vh] overflow-x-hidden  overflow-scroll">
         <div className="grid grid-cols-3 md:grid-cols-4 gap-3 p-2 ">
-          <Skill
-            avatar={
-              process.env.PUBLIC_URL + '/img/skills/java-original-wordmark.svg'
-            }
-            percent={90}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/react-original.svg'}
-            percent={80}
-          />
-          <Skill
-            avatar={
-              process.env.PUBLIC_URL + '/img/skills/typescript-original.svg'
-            }
-            percent={80}
-          />
-          <Skill
-            avatar={
-              process.env.PUBLIC_URL + '/img/skills/mysql-original-wordmark.svg'
-            }
-            percent={80}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/git-original.svg'}
-            percent={80}
-          />
-          <Skill
-            avatar={
-              process.env.PUBLIC_URL +
-              '/img/skills/spring-original-wordmark.svg'
-            }
-            percent={70}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/redis-original.svg'}
-            percent={70}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/nodejs-original.svg'}
-            percent={70}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/docker-original.svg'}
-            percent={70}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/vuejs-original.svg'}
-            percent={60}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/python-original.svg'}
-            percent={60}
-          />
-          <Skill
-            avatar={process.env.PUBLIC_URL + '/img/skills/php-original.svg'}
-            percent={50}
-          />
+          <Skill avatar={skillNameToSrc('java-wordmark.svg')} percent={90} />
+          <Skill avatar={skillNameToSrc('spring-wordmark.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('python-wordmark.svg')} percent={90} />
+          <Skill avatar={skillNameToSrc('django.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('kafka-wordmark.svg')} percent={70} />
+          <Skill avatar={skillNameToSrc('typescript.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('react-wordmark.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('angular.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('vuejs.svg')} percent={70} />
+          <Skill avatar={skillNameToSrc('nodejs.svg')} percent={60} />
+          <Skill avatar={skillNameToSrc('redis.svg')} percent={80} />
+          <Skill avatar={skillNameToSrc('docker.svg')} percent={70} />
+          <Skill avatar={skillNameToSrc('git.svg')} percent={80} />
         </div>
       </div>
     </div>
